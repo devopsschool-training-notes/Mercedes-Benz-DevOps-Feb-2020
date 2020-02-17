@@ -79,3 +79,40 @@ GITHUB USER 2 FLOW
 https://www.devopsschool.com/videos/432/git-fundamental-using-github-tutorial-devopsschool/
 https://www.devopsschool.com/videos/108/git-essential-tutorial-november-2019-by-devopsschool-com/
 https://www.devopsschool.com/videos/112/learn-git-fundamental-course-2019-by-devopsschool/
+
+TYPES OF branch
+    LOCAL branch
+    REMOTE
+
+ 514  history
+  515  clear
+  516  git branch -a
+  517  git branch fea1
+  518  git branch -a
+  519  git checkout fea1
+  520  clear
+  521  git branch -a
+  522  touch fea1.txt;git add .;git commit -m"adding"
+  523  git log --oneline
+  524  clear
+  525  git checkout master
+  526  ls
+  527  git merge fea1
+  528  ls
+  529  history
+529  history
+  530  clear
+  531  ls
+  532  git log --oneline
+  533  git tag rrr -c d6b2921
+  534  clear
+  535  git tag -a v1.2 d6b292 -m "Message here"
+  536  git tag --list
+  537  git checkout v1.2
+  538  cler
+  539  clear
+  540  git log --oneline
+  541  git branch old
+  542  git branch
+  543  git push origin old
+  544  history
