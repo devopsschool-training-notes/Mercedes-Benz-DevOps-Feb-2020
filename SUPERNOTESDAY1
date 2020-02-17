@@ -1,0 +1,32 @@
+DAY1
+
+
+==============================================
+Basic workflow in Git.
+===========================================
+1.  Repository - .git
+            = FILES + DATABASE(META)
+                            WHO + WHEN + WHY
+
+Step 1 - Create repo.
+$ git init
+
+Step 2 - Create a file using IDE
+
+Step 3 - Add a file to GIT [ Working dir to Staging]
+$ git add  file1.txt
+
+ONE TIME
+=========================
+git config user.name "Rajesh kumar"
+git config user.email "devops@rajeshkumar.xyz"
+git config --list
+
+Step 4 - Commit a file to Git. [ Staging to repo.]
+$ git commit -m"This is my first file"
+
+Step 5 - See the commtted file.
+$ git log
+$ git show commit-id
+$ git status
+
