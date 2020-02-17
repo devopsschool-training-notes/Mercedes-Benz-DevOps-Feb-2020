@@ -30,3 +30,47 @@ $ git log
 $ git show commit-id
 $ git status
 
+http://bit.ly/3bLfgLm
+========================================
+QS - How can i share my code and integ with others?
+QS - How to branch and merge
+Qs - UI
+
+=================================================
+Github.com
+bitbueket
+gitlab
+gerrit
+
+GITHUB USER1 FLOW
+==============================
+  559  git push https://github.com/devopsschool-lab-exercise/test4.git master
+  560  clear
+  561  start .
+  562  git add .
+  563  git commit -m"adsdas"
+  564  git push https://github.com/devopsschool-lab-exercise/test4.git master
+  565  clear
+  566  ls
+  567  git pull https://github.com/devopsschool-lab-exercise/test4.git  master
+  568  ls
+  569  history
+
+
+GITHUB USER 2 FLOW
+498  git clone https://github.com/devopsschool-lab-exercise/test4.git
+  499  ls
+  500  cd test4/
+  501  clear
+  502  git log --online
+  503  git log --oneline
+  504  vi sdfsd
+  505  git status
+  506  git add .
+  507  git status
+  508  git commit -m"fsdfsfS"
+  509  git config user.name "Rajesh kumar"
+  510  git config user.email "devops@rajeshkumar.xyz"
+  511  git commit -m"fsdfsfS"
+  512  clear
+  513  git push origin master
