@@ -190,3 +190,96 @@ mvn archetype:generate -DgroupId=com.benz.software -DartifactId=chat -Darchetype
 
 
 mvn archetype:generate -DgroupId=com.benz.software -DartifactId=chat -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false -Dhttp.nonProxyHosts=localhost -Dhttp.proxyHost=53.244.194.32 -Dhttp.proxyPort=3128
+
+Maven
+https://www.devopsschool.com/videos/114/maven-essential-tutorial-november-2019-by-devopsschool-com/
+https://www.devopsschool.com/videos/114/maven-essential-tutorial-november-2019-by-devopsschool-com/
+=========================================================================================
+==================================================================================================
+What is Jenkins?
+    CI tools
+    Contious Integ
+    Free 
+    Open source
+    PAID - ENTERPRISE Jenkins
+    Dev in Java
+
+
+WHAT IS ci?
+        Auto Build --> Auto Testing
+        ===========================
+                Imm Feedback.
+                        Email
+                        chat
+                        Dashboard
+                Integ with All DevOps tools.
+                - https://www.devopsschool.com/path
+                Scheduling and trigger a Job.
+
+=================================================================
+                        Jenkins
+
+
+Other tool -> Teamcity - Bamboo - UBuild - 
+
+Architecture of Jenkins?
+===============================================
+Humen -----> JENKINS WEB                    ====> NODE - SLAVE
+                8080
+                Configure JOBS
+                            Build
+                            Testing
+                            Package
+                            Deployment
+                            AT
+                            ANY
+                Each JOB has PHASES
+                        SCM
+                            Step1 - ONE THING  - ONE ACTIOn.
+                            Step2
+                        BUILD
+                            Step1 
+                            Step2
+                        POST BUILD
+                            Step1 
+                            Step2
+
+
+How to install Jenkins?
+===============================================
+https://www.devopsschool.com/tutorial/jenkins/jenkins-installation-and-configuration.html
+
+
+http://13.233.16.213:8080/
+devops
+devops123
+
+=================================================================
+=================================================================
+Secret Forumala?
+
+QS 1- What is your technology?
+        JAVA -> JDK 8. -- MEANS - JDK need TO BE THERE in NODE.
+
+QS 2- Where is your Source Code?
+        git hub - url - user - passs
+                    -- MEANS - Git need TO BE THERE in NODE.
+    https://github.com/devops-school/helloworld-java-maven
+
+QS 3 - What is your Builder?
+        maven
+                    -- MEANS - maven need TO BE THERE in NODE.
+        mvn compile
+QS 4 -  When you want to triiger this build?
+                    -- Hourly
+                    @hourly
+
+Qs 5 - Whom you want to notify a results.
+        rajesh@scmgalaxy.com
+
+
+
+
+
+
+
