@@ -94,3 +94,26 @@ Step Download Maven from
 Extract it and keep it inside   C:\tools\maven 
 
 Add this "C:\tools\maven\bin" into PATH
+=============================================================
+How to work with Maven?
+
+FIRST DAY OF THE PROJECT?  by ARCHITECT
+============================================
+Project Name - com.benz.software        = -DgroupId
+Module Name - chat                      = -DartifactId
+Create a project Skeleton. and Push to git.
+
+$ mvn archetype:generate -DgroupId=com.benz.software -DartifactId=chat -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
+=========================================
+
+You need to become DEV.
+==========================================
+BUILD  It ----> mvn compile
+UT  It ----> mvn test
+Package  It ----> mvn package
+
+You need to become QA
+===========================================
+BUILD  It ----> mvn compile
+UT  It ----> mvn test
+Package  It ----> mvn package
