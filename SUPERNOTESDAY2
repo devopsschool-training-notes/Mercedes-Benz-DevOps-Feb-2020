@@ -187,3 +187,6 @@ Package  It ----> mvn package
 $ mvn archetype:generate -DgroupId=com.benz.software -DartifactId=chat -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false -DproxySet=true -DproxyHost=53.244.194.32 -DproxyPort=3128 -DproxyUsername=<USER> -DproxyPassword=<PASSWORD>
 
 mvn archetype:generate -DgroupId=com.benz.software -DartifactId=chat -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false -Dhttp.nonProxyHosts=localhost|127.0.0.1
+
+
+mvn archetype:generate -DgroupId=com.benz.software -DartifactId=chat -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false -Dhttp.nonProxyHosts=localhost -Dhttp.proxyHost=53.244.194.32 -Dhttp.proxyPort=3128
