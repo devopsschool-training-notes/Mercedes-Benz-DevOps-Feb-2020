@@ -104,6 +104,16 @@ Module Name - chat                      = -DartifactId
 Create a project Skeleton. and Push to git.
 
 $ mvn archetype:generate -DgroupId=com.benz.software -DartifactId=chat -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
+
+$ mvn archetype:generate -DgroupId=com.benz.software -DartifactId=chat -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false -DproxySet=true -DproxyHost=53.244.194.32 -DproxyPort=3128
+
+
+
+
+
+<host>53.244.194.32</host>
+
+      <port>3128</port>
 =========================================
 
 You need to become DEV.
