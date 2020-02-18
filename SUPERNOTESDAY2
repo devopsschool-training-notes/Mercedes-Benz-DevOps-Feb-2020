@@ -107,6 +107,9 @@ $ mvn archetype:generate -DgroupId=com.benz.software -DartifactId=chat -Darchety
 
 $ mvn archetype:generate -DgroupId=com.benz.software -DartifactId=chat -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false -DproxySet=true -DproxyHost=53.244.194.32 -DproxyPort=3128 -DproxyUsername=<USER> -DproxyPassword=<PASSWORD>
 
+
+
+
 maven central repo from http to https INTO POM.xml
 ================================================
 <repositories>
@@ -180,3 +183,7 @@ You need to become QA
 BUILD  It ----> mvn compile
 UT  It ----> mvn test
 Package  It ----> mvn package
+
+$ mvn archetype:generate -DgroupId=com.benz.software -DartifactId=chat -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false -DproxySet=true -DproxyHost=53.244.194.32 -DproxyPort=3128 -DproxyUsername=<USER> -DproxyPassword=<PASSWORD>
+
+mvn archetype:generate -DgroupId=com.benz.software -DartifactId=chat -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false -Dhttp.nonProxyHosts=localhost|127.0.0.1
