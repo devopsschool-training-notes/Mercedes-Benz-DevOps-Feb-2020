@@ -1,0 +1,57 @@
+PLAN -> Coding -> Review -> Build -> UT -> Pack -> Archive -> Dep2QA - AT - CC -
+=================================================================================
+JIRA -> Git -> SonarQube -> Maven -> junit -> jar -> Artifactory-> Ansible -> Sel - Jacoco
+===============================================================================---
+                                        Jenkins
+
+JIRA
+Maven
+SonarQube
+Jenkins
+==========================================================================
+What is JIRA?
+        PLANNING TOOL
+        REQUIREMRNT 
+        ISSUES Tracking
+        Incidents
+        Backlog
+        Task
+        Feature
+
+        From Atlassion
+
+        Wriiten in JAVA
+        JRE to run it.
+
+Why JIRA?
+        Project mgmt
+        Agile mgmt
+        Scrum mgmt
+        Process mgmt
+        Service mgmt
+    
+Other tools - 
+        Trello - Servicenow - Sap
+
+How to install it?
+        JRE
+        Package
+
+http://13.233.16.213:8080/
+devops
+devops123
+
+rajesh
+rajesh123
+=================================================
+Basic workflow in JIRA
+----------------------
+Project Manager
+    Step 1- Create a Project
+    Step 2 - Add users
+    Step 3 - Create a ticket and Assign to Devoper|QA
+
+Devoper|QA
+    Step 1 - Check everyda your ticket assigned
+    Step 2 - Work on it
+    Step 3 - Update a ticket and possibly close it.
