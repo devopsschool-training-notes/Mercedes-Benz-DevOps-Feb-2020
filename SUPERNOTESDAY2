@@ -107,6 +107,15 @@ $ mvn archetype:generate -DgroupId=com.benz.software -DartifactId=chat -Darchety
 
 $ mvn archetype:generate -DgroupId=com.benz.software -DartifactId=chat -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false -DproxySet=true -DproxyHost=53.244.194.32 -DproxyPort=3128 -DproxyUsername=<USER> -DproxyPassword=<PASSWORD>
 
+maven central repo from http to https INTO POM.xml
+================================================
+<repositories>
+  <repository>
+    <id>central maven repo</id>
+    <name>central maven repo https</name>
+    <url>https://repo.maven.apache.org/maven2</url>
+  </repository>
+</repositories>
 
 INTO setting.xml of MAVEN Install directory.
 =============================================
