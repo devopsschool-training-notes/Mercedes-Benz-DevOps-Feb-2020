@@ -55,3 +55,42 @@ Devoper|QA
     Step 1 - Check everyda your ticket assigned
     Step 2 - Work on it
     Step 3 - Update a ticket and possibly close it.
+    ===============================================
+
+    QS time 
+
+
+https://www.devopsschool.com/videos/126/jira-essential-tutorial-november-2019-by-devopsschool-com/
+https://www.devopsschool.com/videos/127/jira-essential-tutorial-august-2019-by-devopsschool/
+=======================================================
+Maven
+==============================
+What is Maven?
+    Build mgmt tools
+        Process of Converting a source code into binary.
+    For JAVA Projects.
+    Free
+    Open source
+    Written in Java
+
+======================
+Why Maven?
+    In order to Converting a source code into binary.
+                - 30 STEPS  == With a help of maven - you convert into ONE STEP.
+
+How to install it?
+=======================================
+Install OPEN JDK 8....
+    Go to https://jdk.java.net/java-se-ri/8-MR3
+            Download "Windows 10 i586 Java Development Kit (md5) 92 MB"
+            Unzip and Keep it under C:\tools\Java
+SET JAVA_HOME
+
+How to install Maven?
+==========================
+Step Download Maven from 
+        https://downloads.apache.org/maven/maven-3/3.6.3/binaries/apache-maven-3.6.3-bin.zip
+
+Extract it and keep it inside   C:\tools\maven 
+
+Add this "C:\tools\maven\bin" into PATH
