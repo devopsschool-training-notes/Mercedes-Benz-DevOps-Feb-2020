@@ -1,0 +1,182 @@
+Ansible
+Docker
+Kubernetes
+Confluence
+Artifactory
+============================================================
+===========================================================
+What is Ansible?
+    Config mgmt tool.
+    Deployment tool
+    Ansible
+        Free - Command line
+        Paid - Ansible TOWER - GUI
+    Python
+    From REDHAT
+
+What is Config mtmt?
+    SERVER(S) config mgmt
+
+What is there in ONE server?
+        --- We call server resources.
+    Ansible 
+            -> AWS ->
+                       Package
+                        file
+                        directory
+                        users
+    group
+    OS
+    RAM
+    CPU
+    HDD
+
+ 
+
+Using Ansible, you manage a config of a server resources......
+                        BUT MULTIPLE server at time.
+
+Why Ansible?
+    Ansible is Easy to learn|debug|test|extend|share compare
+                JAVA - PYTHON - PERL - RUBY - PHP - 
+    Ansible is Platform independent
+
+    Ansible is IDEOMPOTENT
+    
+    Actual          Desire
+    5                FILE --- 10 LINES ==> ANSIBEL WOULD RUN.
+    10              10   - ANSIBLE WOULD NOT RUN.
+
+Other tool - 
+Puppet -> Chef -> Salt - Octopus Deployment
+
+Ansible Architecture
+==============================================================
+Ansible Control server          Ansible Remote server
+ACS                             ARS
+-------------------------------------------
+LINUX                           ANY
+64 BIT                          ANY
+ACS     -----WINDOWS----------> WINRM(HTTP)
+                                DOTNET4.5 + PS3.0 +WINRM
+        -----LINUX---------->    SSH
+                                PYTHON 2.4+ + SSH
+
+Ansible 
+        Modules                        
+
+==================================================================
+QA  1 - What you are going to Deploy?
+        ANSWER -------Web server with one Package(file)
+QA 2 - Where you are going to deploy?  ========= INVENTORY
+                    IP               
+                    user
+                    PASS
+                    PROPOTA L
+QA 3 - HOW you are going to deploy? =============== PLAYBOOK
+
+
+ACS
+======================
+    Ansible                     DONE 
+            Modules
+    INVENTORY
+    PLAYBOOK
+            Web server with one Package(file)
+            ========================================
+            Collection of PLAY.
+            PLAY
+                HOSTS
+                TASKS
+                        TASK 1 ----> Module with Param
+                        TASK 2 ----> Module with Param
+                        TASK 3 ----> Module with Param
+
+
+Project - Web server with one Package(file)
+==============================================
+PSUCODE
+1. install web server
+2. Copy a index.html in /var/www/html/
+3. Start a web webserver
+
+
+What is Modules?
+Module is DOING ONE TASK.
+                install
+                Copy
+                start
+
+=========================================================
+ACS = 35.154.20.126
+ec2-user
+
+Install ANSIBLE 
+https://www.devopsschool.com/blog/how-to-install-ansible-in-centos-7-rhel-7/
+
+Ansible Modules
+https://docs.ansible.com/ansible/latest/modules/modules_by_category.html
+
+Ineventory
+List of IP address and user name and password and protomal
+
+13.233.166.35   ansible_user=ec2-user ansible_ssh_private_key_file=remote.pem ansible_become=yes
+15.206.66.15    ansible_user=ec2-user ansible_ssh_private_key_file=remote.pem ansible_become=yes
+15.206.66.100   ansible_user=ec2-user ansible_ssh_private_key_file=remote.pem ansible_become=yes
+13.235.245.121  ansible_user=ec2-user ansible_ssh_private_key_file=remote.pem ansible_become=yes
+
+
+    PLAYBOOK
+            Web server with one Package(file)
+            ========================================
+            Collection of PLAY.
+            PLAY
+                HOSTS
+                TASKS
+                        TASK 1 ----> Module with Param
+                        TASK 2 ----> Module with Param
+                        TASK 3 ----> Module with Param
+
+- name: This sets up an httpd webserver
+  hosts: web
+  tasks:
+  - name: Install the httpd apps
+    yum: name=httpd
+  - name: start the httpd service
+    service: name=httpd state=started
+  - name: create a empty fle
+    file: dest=/opt/test.txt state=touch
+  - name: copy a file
+    copy: dest=/var/www/html/ src="index.html"
+...
+
+
+[teama]
+13.233.166.35   ansible_user=ec2-user ansible_ssh_private_key_file=remote.pem ansible_become=yes
+[teamb]
+15.206.66.15    ansible_user=ec2-user ansible_ssh_private_key_file=remote.pem ansible_become=yes
+[teamc]
+15.206.66.100   ansible_user=ec2-user ansible_ssh_private_key_file=remote.pem ansible_become=yes
+[teamd]
+13.235.245.121  ansible_user=ec2-user ansible_ssh_private_key_file=remote.pem ansible_become=yes
+
+Step 1- Login to 
+ACS = 35.154.20.126
+ec2-user
+Password - 
+
+Commands
+$ ls
+$ pwd
+$ vi -- editor
+$ cd 
+$ cp srcfile destfile
+
+   1  ls
+    2  cp index.html index-team1.html
+    3  ls
+    4  cp rajesh.yaml team1.yaml
+    5  history
+
+
+$ ansible-playbook -i inventory rajesh.yaml
