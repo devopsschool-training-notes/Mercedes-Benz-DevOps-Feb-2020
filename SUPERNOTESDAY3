@@ -180,3 +180,64 @@ $ cp srcfile destfile
 
 
 $ ansible-playbook -i inventory rajesh.yaml
+==========================================================================
+==========================================================================
+Docker
+=============================
+
+What is Docker?
+        Container mgmt platform.
+
+What is Container?
+========================================================================
+
+DOCKER -IP  - 13.233.63.243
+USER NAME - ec2-users
+Passwrod - devops123
+https://www.devopsschool.com/tutorial/docker/install-config/docker-install-commuityedition-centos-rhel.html
+
+
+
+Container workflow
+=========================================
+create -> start -> stop -> restart > stop -> remove
+==================================================
+Docker Componts
+        IMAGE AKA - APP NAME -> jenkins
+        FROM IT WOULD COME - --> REGISTRy --https://hub.docker.com/
+
+=========================================
+sudo -s
+docker create --name rajesh jenkins
+docker ps -a
+docker start rajesh 
+docker ps -a
+docker stop rajesh
+docker ps -a
+docker restart rajesh 
+docker ps -a
+docker stop rajesh
+docker ps -a
+docker rm rajesh
+
+PHASE 2
+=========================================
+sudo -s
+docker create --name rajesh -p 8080:8080 jenkins
+docker ps -a
+docker start rajesh 
+docker ps -a
+docker stop rajesh
+docker ps -a
+docker restart rajesh 
+docker ps -a
+docker stop rajesh
+docker ps -a
+
+
+IP - 13.233.63.243
+
+docker create --name rajesh -p 8080:8080 jenkins
+docker create --name rajesh1 -p 8090:8080 jenkins
+
+
