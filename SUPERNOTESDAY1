@@ -1,5 +1,104 @@
 DAY1
 
+https://www.devopsschool.com/videos/387/complete-cicd-devops-implementation-from-scratch-using-jenkins-by-devopsschool/
+
+Prod - Prodx
+==================
+1 months -
+=======
+devops
+        QUALITY REDEFINED
+        COST Red
+        Imm Release
+
+Mgr - Mgrx
+=========================Hiring =====
+Architect - 1-2 ------> JIRA -> Confulence - MS PLAN
+Dev - 10 TEAM - 10 FEA
+    - Code Integ -> Git
+    - Code Review
+            Peer Code - Gerrit -
+            Static Code Ana - SonarQube
+    -  Build mgmt - Maven - Ant - MsBuild
+    -  Unit Tesing - jUnit - Nunit
+    - Pack
+            SYS - EXE - MSI - RPM
+            APP -
+    - Pack mgmt tool using repos -
+            Artifactory - nexus
+    - Deploy 2 QA
+    =========================================
+    Prodx44.5 --->  100 Servers.
+    ==========================
+                    50 LI - 50 WI
+                    50 APA - 50 NG
+                    25 MYSQL - 25 MS - 25 OR - 25 MS
+                    100 DIFF
+
+    1 DEP ---- 9 mins....
+    100 Dep -----> 9 mins..
+---------------------------------
+    HOW?
+    Puppet -> Chef --> Ansible - > Udeploy -> Octopus Deploy
+
+    1 SECOND -
+
+    Container - DOCKER + KUBERNETES
+=========================================================================
+AT -
+
+==========================
+
+Code Coverage- Jaococ - Ncover
+==================================================
+
+PLAN -> Code -> Build -> Pack -> Archive -> Dep2QA -> AT -> CC
+                                                                Pass = Release
+                                                                Fail = REPEAT
+
+
+PLAN -> Code -> Build -> Pack -> Archive -> Dep2QA -> AT -> CC
+===============================================================
+JIRA -> Git -> Maven -> Jar -> Artifactory -> Ansible-> Sel -> Jacoco
+======================================================================
+                                jenkins
+
+Deployment to Prod
+Puppet -> Chef --> Ansible - > Udeploy -> Octopus Deploy
+
+Monitoring PROD
+        LOG MONITOING -
+        INFRA MONITOING
+        Performance
+
+https://www.devopsschool.com/path/
+Git
+maven
+jenkins
+Docker - Kube
+
+JIRA
+Confulence
+Azure
+===================================
+What is GIT?
+            Source Code Versioning tool
+            Free
+            Open Source
+            DISTRIBUTED ------
+       
+Why GII?    
+        You want to know...
+                    WHO?ATz
+                    WHEN?
+                    What?
+                    Where?
+                    Why?
+How to install git?
+        Windows -
+        git-scm.com -> Download EXE -> install
+            git-scm
+            git-bash====I LOVE THIS
 
 ==============================================
 Basic workflow in Git.
